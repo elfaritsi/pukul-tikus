@@ -1,0 +1,76 @@
+.control{
+	width: 100%;
+	position: relative;
+}
+.control h1{
+	font-family: arial;
+	text-align: center;
+	font-size: 50px;
+}
+
+.control button{
+	display: block;
+	font-family: "Calibri";
+	cursor: pointer;
+	margin: -25px auto;
+	font-size: 20px;
+	box-shadow: 3px 3px 5px rgba(0,0,0, .5);
+}
+
+.control .skor{
+	font-weight: bold; 
+	text-align: center; 
+	margin-top: 20px;
+	font-size: 50px;
+}
+
+.control .waktu{
+	position: absolute;
+	font-size: 40px;
+	margin-left: 90%;
+	margin-top: -150px;
+}
+
+.wadah{
+	width: 600px;
+	margin: -30px auto;
+	cursor: url(../img/palu1.png), auto;
+	
+}
+
+.wadah:active{
+	cursor: url(../img/palu2.png), auto;
+}
+.tanah{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.tanah::after{
+	content: '';
+	display: block;
+	width: 200px;
+	height: 100px;
+	background: url(../img/tanah.png) bottom center no-repeat;
+	background-size: 80%;
+	position: absolute;
+	bottom: -25px;
+}
+
+.tikus{
+	display: block;
+	width: 200px;
+	height: 100px;
+	background: url(../img/tikus.png) bottom center no-repeat;
+	background-size: 50%;
+	position: absolute;
+	bottom: -66px;
+	transition: .3s;
+}
+
+.tanah.muncul .tikus{
+	bottom: 25px;
+}
